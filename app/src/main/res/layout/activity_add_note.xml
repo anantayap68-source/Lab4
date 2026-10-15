@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CfE0EB"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- หัวข้อหลัก -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="เพิ่มโน้ตใหม่"
+            android:textColor="#082567"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp" />
+
+        <!-- การ์ดส่วนข้อมูลผู้ใช้ -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:elevation="2dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ข้อมูลผู้ใช้ (User Info)"
+                android:textColor="#2E5894"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp" />
+
+            <EditText
+                android:id="@+id/etUserName"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="#F1F5F9"
+                android:hint="ชื่อผู้ใช้ (User Name)"
+                android:paddingHorizontal="12dp"
+                android:textColor="#334155"
+                android:textColorHint="#94A3B8"
+                android:textSize="14sp"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:id="@+id/etStudentFaculty"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="#F1F5F9"
+                android:hint="คณะ (Faculty)"
+                android:paddingHorizontal="12dp"
+                android:textColor="#334155"
+                android:textColorHint="#94A3B8"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- การ์ดส่วนข้อมูลโน้ต -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:elevation="2dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ข้อมูลโน้ต (Note Info)"
+                android:textColor="#2E5894"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp" />
+
+            <EditText
+                android:id="@+id/etNoteTitle"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="#F1F5F9"
+                android:hint="หัวข้อโน้ต (Title)"
+                android:paddingHorizontal="12dp"
+                android:textColor="#334155"
+                android:textColorHint="#94A3B8"
+                android:textSize="14sp"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:id="@+id/etTextContent"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#F1F5F9"
+                android:gravity="top|start"
+                android:hint="เนื้อหา TextNote"
+                android:padding="12dp"
+                android:textColor="#334155"
+                android:textColorHint="#94A3B8"
+                android:textSize="14sp"
+                android:layout_marginBottom="10dp" />
+
+            <EditText
+                android:id="@+id/etChecklistContent"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="#F1F5F9"
+                android:hint="รายการ CheckList (แยกด้วยจุลภาค , )"
+                android:paddingHorizontal="12dp"
+                android:textColor="#334155"
+                android:textColorHint="#94A3B8"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- ปุ่มกด -->
+        <Button
+            android:id="@+id/btnSaveTextNote"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="#0356B3"
+            android:text="บันทึก TextNote"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/btnSaveCheckListNote"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="#80BADD"
+            android:text="บันทึก CheckListNote"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>
